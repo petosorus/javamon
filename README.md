@@ -10,3 +10,4 @@ Additions de gameplay (courtesy of <a href="https://twitter.com/Salamiaou" >Gabr
     choix du type de sauvegarde (auto only ou manuelle)
     
 
+Tâche actuelle : système de combat

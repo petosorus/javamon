@@ -2,7 +2,10 @@ package javamon.model;
 
 public class StatusChanger extends Ability{
 
-	public StatusChanger(String name){
+	Status status;
+
+	public StatusChanger(String name, Status status){
 		super(name);
+		this.status = status;
 	}
 }
