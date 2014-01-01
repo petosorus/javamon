@@ -1,11 +1,11 @@
 package javamon.model;
 
-import java.util.Set;
+import java.util.HashSet;
 
 public abstract class Type{
-	Set<Type> noEffect;
-	Set<Type> weak;
-	Set<Type> strong;
+	HashSet<Type> noEffect;
+	HashSet<Type> weak;
+	HashSet<Type> strong;
 
 	public double coefficient(Type attacked){
 		if(noEffect.contains(attacked)){ return 0; }
