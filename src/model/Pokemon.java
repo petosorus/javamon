@@ -44,5 +44,4 @@ public class Pokemon{
     	hpCurrent -= damage;
     }
     
-    
 }

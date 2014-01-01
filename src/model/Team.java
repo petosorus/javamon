@@ -15,6 +15,5 @@ public class Team{
         dest = tmp;
     }
     
-    
        
 }
