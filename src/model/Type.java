@@ -6,11 +6,11 @@ public abstract class Type{
 	HashSet<Type> noEffect;
 	HashSet<Type> weak;
 	HashSet<Type> strong;
-
-	public double coefficient(Type attacked){
-		if(noEffect.contains(attacked)){ return 0; }
-		if(weak.contains(attacked)){ return 0.5; }
-		if(strong.contains(attacked)){ return 2; }
+	
+	public double coefficient(Type defender){
+		if(noEffect.contains(defender)){ return 0; }
+		if(weak.contains(defender)){ return 0.5; }
+		if(strong.contains(defender)){ return 2; }
 		return 1;
 	}
 	
@@ -18,4 +18,5 @@ public abstract class Type{
 		if(this.equals(attacker)){ return 1.5; }
 		return 1;
 	}
+	
 }
