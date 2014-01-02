@@ -17,7 +17,7 @@
 
 <!-- Distribution via un jar. -->
 <target name="jar" depends="compile" >
-  <jar jarfile="gl.jar" basedir="class">
+  <jar jarfile="javamon.jar" basedir="class">
     <manifest>
 	<attribute name="Main-Class" 
 		   value="class/client/Client"/>
@@ -33,7 +33,7 @@
 
 <!-- Run Jar -->
 <target name="runJar" depends="jar">
-  <java jar="gl.jar" fork="true">
+  <java jar="javamon.jar" fork="true">
 <!--    <arg line="5 10 5" />-->
   </java>
 </target>
