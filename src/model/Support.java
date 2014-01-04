@@ -4,8 +4,8 @@ public class Support extends Ability{
 	
 	Statistic statistic;
 
-	public Support(String name, int accuracy, Statistic statistic){
-		super(name, accuracy);
+	public Support(String name, int accuracy, Type type, Statistic statistic){
+		super(name, accuracy, type);
 		this.statistic = statistic;
 	}
 	
