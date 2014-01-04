@@ -4,7 +4,7 @@ Javamon
 Clone de pokémon en Java.
 Architecture MVC.
 
-Additions de gameplay (courtesy of ):
+Additions de gameplay :
 
     permadeath
     choix du type de sauvegarde (auto only ou manuelle)
