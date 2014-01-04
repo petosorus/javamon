@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="Devoir gl" default="compile">
+<project name="javamon" default="compile">
 
 <presetdef name="javac">
   <javac includeantruntime="false" />
@@ -35,6 +35,16 @@
 <target name="runJar" depends="jar">
   <java jar="javamon.jar" fork="true">
 <!--    <arg line="5 10 5" />-->
+  </java>
+</target>
+
+<target name="compileTest" depends="compile">
+  <javac srcdir="test" destdir="test" />
+</target>
+
+
+<target name="testPokemon" depends="compileTest">
+  <java classname="testPokemon">
   </java>
 </target>
 

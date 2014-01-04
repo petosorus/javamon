@@ -16,6 +16,12 @@ public class Pokemon{
     int hpCurrent;
     int level;
     
+    Statistic attack;
+    Statistic defense;
+    Statistic speed;
+    Statistic attackSpe;
+    Statistic defenseSpe;
+    
     Ability slot1;
     Ability slot2;
     Ability slot3;
