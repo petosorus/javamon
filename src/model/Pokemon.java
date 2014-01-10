@@ -65,10 +65,6 @@ public class Pokemon{
     
     public void decreaseHP(int damage){ hpCurrent -= damage; }
     
-    public void decreaseStat(Statistic stat, int value){
-    	stat.tempDecrement(value);
-    }
-    
     public void improveStat(Statistic stat, int value){
     	stat.tempIncrement(value);
     }

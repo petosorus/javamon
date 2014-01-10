@@ -10,9 +10,10 @@ public class Statistic{
 	
 	public void increment(int value){ this.value += value; }
 	
-	public void tempDecrement(int value){ statLevel -= value; }
-	
-	public void tempIncrement(int value){ statLevel += value; }
+	public void tempIncrement(int value){
+		statLevel += value;
+		adaptStat();
+	}
 	
 	public void resetTempCondition(){ 
 		curValue = value;
