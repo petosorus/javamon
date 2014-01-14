@@ -16,12 +16,12 @@ public abstract class Ability{
 	
 //	public abstract void effect();
 		
-	public double accuracy(int attackerAccuracy){
+	protected double currentAccuracy(int attackerAccuracy){
 		return this.accuracy / 100 * attackerAccuracy / 1000;
 	}
 		
-	public boolean strike(int attackerAccuracy){
-		if (Math.random() <= accuracy(attackerAccuracy)){
+	protected boolean strike(int attackerAccuracy){
+		if (Math.random() <= currentAccuracy(attackerAccuracy)){
 			return true;
 		}
 		return false;
