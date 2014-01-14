@@ -69,7 +69,7 @@ public class Pokemon{
     	stat.tempIncrement(value);
     }
     
-    public void adaptAccuracy(){
+    private void adaptAccuracy(){
     	switch (accuracyLevel){
     		case -6: accuracy = 333;
     				 break;
@@ -99,6 +99,5 @@ public class Pokemon{
     				 break;
     	}
     }
-    
-    
+       
 }

@@ -20,7 +20,7 @@ public class Statistic{
 		statLevel = 0;
 	}
 	
-	public void adaptStat(){
+	private void adaptStat(){
 		switch(statLevel){
 			case -6: curValue = 25;
     				 break;
