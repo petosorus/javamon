@@ -3,7 +3,7 @@ package javamon.model;
 public class Attack extends Ability{
 	
 	int force;
-	AbilityCategory category;
+	AttackCategory category;
 	
 	public Attack(String name, int accuracy, Type type, int force){
 		super(name, accuracy, type);
@@ -12,10 +12,16 @@ public class Attack extends Ability{
 	
 	protected int damageCalculation(Pokemon attacker, Pokemon defender){
 		int level = attacker.level;
-		int attack = attacker.attack.curValue;
+		
+		int attack = category == AttackCategory.Physical ? 
+			attacker.attack.curValue : attacker.attackSpe.curValue;
+			
+		int defense = category == AttackCategory.Physical ? 
+			attacker.defense.curValue : attacker.defenseSpe.curValue;
+		
 		double power = force * type.coefficientSTAB(attacker.type1) *
 			type.coefficientSTAB(attacker.type2);
-		int defense = attacker.defense.curValue;
+
 		double coefficient = type.coefficient(defender.type1) * 
 			type.coefficient(defender.type2);
 		
