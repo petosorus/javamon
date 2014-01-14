@@ -33,6 +33,7 @@
 <!-- Run Jar -->
 <target name="runJar" depends="dist">
   <java jar="javamon.jar" fork="true">
+  </java>
 </target>
 
 <target name="compileTest" depends="compile">
@@ -41,6 +42,7 @@
 
 <target name="testPokemon" depends="compileTest">
   <java classname="testPokemon">
+  </java>
 </target>
 
 </project>
