@@ -16,7 +16,7 @@
 </target>
 
 <!-- Distribution via un jar. -->
-<target name="jar" depends="compile" >
+<target name="dist" depends="compile" >
   <jar jarfile="javamon.jar" basedir="class">
     <manifest>
 	<attribute name="Main-Class" 
@@ -28,25 +28,19 @@
 <!-- Run -->
 <target name="run" depends="compile">
   <java classname="client.Client" classpath="class" spawn="true" fork="true"/>
-<!--    <arg line="5 10 5" />-->
 </target>
 
 <!-- Run Jar -->
-<target name="runJar" depends="jar">
+<target name="runJar" depends="dist">
   <java jar="javamon.jar" fork="true">
-<!--    <arg line="5 10 5" />-->
-  </java>
 </target>
 
 <target name="compileTest" depends="compile">
   <javac srcdir="test" destdir="test" />
 </target>
 
-
 <target name="testPokemon" depends="compileTest">
   <java classname="testPokemon">
-  </java>
 </target>
-
 
 </project>
