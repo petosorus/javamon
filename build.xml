@@ -5,10 +5,12 @@
   <javac includeantruntime="false" />
 </presetdef>
 
+<!-- Compilation -->
 <target name="compile">
   <javac srcdir="src" destdir="class" classpath="class"/>
 </target>
 
+<!-- Documentation -->
 <target name="doc">
   <javadoc sourcepath="src" destdir="doc">
     <fileset dir="src" />
@@ -36,13 +38,13 @@
   </java>
 </target>
 
-<target name="compileTest" depends="compile">
-  <javac srcdir="test" destdir="test" />
-</target>
+<!--<target name="compileTest" depends="compile">-->
+<!--  <javac srcdir="test" destdir="test" />-->
+<!--</target>-->
 
-<target name="testPokemon" depends="compileTest">
-  <java classname="testPokemon">
-  </java>
-</target>
+<!--<target name="testPokemon" depends="compileTest">-->
+<!--  <java classname="testPokemon">-->
+<!--  </java>-->
+<!--</target>-->
 
 </project>
