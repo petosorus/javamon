@@ -8,12 +8,11 @@ public class Support extends Ability{
 	public Support(String name, int accuracy, Type type, Statistic statistic, int force){
 		super(name, accuracy, type);
 		this.statistic = statistic;
-		int force;
+		this.force = force;
 	}
 	
-	@Override
 	public void effect(Pokemon defender){
-		defender.improveStat(this, 
+		defender.improveStat(statistic, force);
 	}
 		
 }

@@ -9,7 +9,7 @@ public class StatusChanger extends Ability{
 		this.status = status;
 	}
 	
-	@Override
+
 	public void effect(){
 		
 	}

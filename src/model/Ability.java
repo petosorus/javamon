@@ -14,7 +14,7 @@ public abstract class Ability{
 		this.type = type;
 	}
 	
-	public abstract void effect();
+//	public abstract void effect();
 		
 	public double accuracy(int attackerAccuracy){
 		return this.accuracy / 100 * attackerAccuracy / 1000;

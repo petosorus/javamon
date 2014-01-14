@@ -10,11 +10,6 @@ public class Attack extends Ability{
 		this.force = force;
 	}
 	
-	@Override
-	public void effect(){
-		
-	}
-	
 	protected int damageCalculation(Pokemon attacker, Pokemon defender){
 		int level = attacker.level;
 		int attack = attacker.attack.curValue;
@@ -28,7 +23,7 @@ public class Attack extends Ability{
 			coefficient);
 	}
 	
-	public void attack(Pokemon attacker, Pokemon defender){
+	public void effect(Pokemon attacker, Pokemon defender){
 		defender.decreaseHP(damageCalculation(attacker, defender));
 	}
 	
