@@ -7,14 +7,14 @@ public abstract class Type{
 	HashSet<Type> weak;
 	HashSet<Type> strong;
 	
-	public double coefficient(Type defender){
+	protected double coefficient(Type defender){
 		if(noEffect.contains(defender)){ return 0; }
 		if(weak.contains(defender)){ return 0.5; }
 		if(strong.contains(defender)){ return 2; }
 		return 1;
 	}
 	
-	public double coefficientSTAB(Type attacker){
+	protected double coefficientSTAB(Type attacker){
 		if(this.equals(attacker)){ return 1.5; }
 		return 1;
 	}
