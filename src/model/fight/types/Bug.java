@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Bug extends Type{
 	private static final Bug instance = new Bug();

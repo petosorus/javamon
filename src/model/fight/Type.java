@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 import java.util.HashSet;
 

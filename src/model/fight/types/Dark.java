@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Dark extends Type{
 	private static final Dark instance = new Dark();

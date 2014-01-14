@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Fight extends Type{
 	private static final Fight instance = new Fight();

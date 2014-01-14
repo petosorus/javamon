@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Steel extends Type{
 	private static final Steel instance = new Steel();

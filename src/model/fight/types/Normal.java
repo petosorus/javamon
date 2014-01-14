@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Normal extends Type{
 	private static final Normal instance = new Normal();

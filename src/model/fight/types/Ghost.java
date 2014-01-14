@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Ghost extends Type{
 	private static final Ghost instance = new Ghost();

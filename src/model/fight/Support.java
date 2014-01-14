@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Support extends Ability{
 	

@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Fire extends Type{
 	private static final Fire instance = new Fire();

@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 import java.lang.Math;
 
@@ -14,7 +14,6 @@ public abstract class Ability{
 		this.type = type;
 	}
 	
-//	public abstract void effect();
 		
 	protected double currentAccuracy(int attackerAccuracy){
 		return this.accuracy / 100 * attackerAccuracy / 1000;

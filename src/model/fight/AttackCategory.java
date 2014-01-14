@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 /**
 * Enum representing category of an attack

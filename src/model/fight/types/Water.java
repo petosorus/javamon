@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Water extends Type{
 	private static final Water instance = new Water();

@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.model.fight;
 
 public class Fairy extends Type{
 	private static final Fairy instance = new Fairy();
