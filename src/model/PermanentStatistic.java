@@ -2,7 +2,7 @@ package javamon.model;
 
 public class PermanentStatistic extends Statistic{
 	
-	public Statistic(int value){ 
+	public PermanentStatistic(int value){ 
 		this.value = value;	
 		curValue = this.value;
 		statLevel = 0;	
@@ -12,7 +12,7 @@ public class PermanentStatistic extends Statistic{
 	public void increment(int value){ this.value += value; }
 	
 	@Override
-	private void adaptStat(){
+	void adaptStat(){
 		switch(statLevel){
 			case -6: curValue = 25;
     				 break;
@@ -42,3 +42,4 @@ public class PermanentStatistic extends Statistic{
     				 break;
     	}
     }
+}

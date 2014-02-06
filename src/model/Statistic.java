@@ -1,6 +1,6 @@
 package javamon.model;
 
-public class Statistic{
+public abstract class Statistic{
 	
 	int value;
 	int curValue;
@@ -17,6 +17,6 @@ public class Statistic{
 		statLevel = 0;
 	}
 	
-	private abstract void adaptStat();
+	abstract void adaptStat();
 	
 }

@@ -16,13 +16,14 @@ public class Pokemon{
     int xp;
     Status status;
     
-    Statistic attack;
-    Statistic defense;
-    Statistic speed;
-    Statistic attackSpe;
-    Statistic defenseSpe;
+    PermanentStatistic attack;
+    PermanentStatistic defense;
+    PermanentStatistic speed;
+    PermanentStatistic attackSpe;
+    PermanentStatistic defenseSpe;
     
-	Accuracy accuracy;
+	InCombatStatistic accuracy;
+	InCombatStatistic evasion;
     
     Ability slot1;
     Ability slot2;
@@ -32,8 +33,9 @@ public class Pokemon{
     public Pokemon(int id, String race, String name, Gender gender,
     			Type type1, Type type2, int hpMax, int hpCurrent, int level,
     			Ability slot1, Ability slot2, Ability slot3, Ability slot4,
-    			Statistic attack, Statistic defense, Statistic speed,
-    			Statistic attackSpe, Statistic defenseSpe){
+    			PermanentStatistic attack, PermanentStatistic defense, 
+    			PermanentStatistic speed, PermanentStatistic attackSpe, 
+    			PermanentStatistic defenseSpe){
     			
     	this.id = id;
     	this.nickname = nickname;
@@ -59,7 +61,7 @@ public class Pokemon{
     	this.slot3 = slot3;
     	this.slot4 = slot4;
     	
-    	accuracy = new(Accuracy);
+//    	this.accuracy = new(InCombatStatistic);
     }
     
     public void decreaseHP(int damage){ hpCurrent -= damage; }
