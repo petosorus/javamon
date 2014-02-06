@@ -22,8 +22,7 @@ public class Pokemon{
     Statistic attackSpe;
     Statistic defenseSpe;
     
-    int accuracy;
-    int accuracyLevel;
+	Accuracy accuracy;
     
     Ability slot1;
     Ability slot2;
@@ -35,6 +34,7 @@ public class Pokemon{
     			Ability slot1, Ability slot2, Ability slot3, Ability slot4,
     			Statistic attack, Statistic defense, Statistic speed,
     			Statistic attackSpe, Statistic defenseSpe){
+    			
     	this.id = id;
     	this.nickname = nickname;
     	
@@ -59,8 +59,7 @@ public class Pokemon{
     	this.slot3 = slot3;
     	this.slot4 = slot4;
     	
-    	accuracy = 1000;
-    	accuracyLevel = 0;
+    	accuracy = new(Accuracy);
     }
     
     public void decreaseHP(int damage){ hpCurrent -= damage; }
@@ -68,36 +67,5 @@ public class Pokemon{
     public void improveStat(Statistic stat, int value){
     	stat.tempIncrement(value);
     }
-    
-    private void adaptAccuracy(){
-    	switch (accuracyLevel){
-    		case -6: accuracy = 333;
-    				 break;
-    		case -5: accuracy = 375;
-    				 break;
-    		case -4: accuracy = 429;
-    				 break;
-    		case -3: accuracy = 500;
-    				 break;
-    		case -2: accuracy = 600;
-    				 break;
-    		case -1: accuracy = 750;
-    				 break;
-    		case 0: accuracy = 1000;
-    				 break;
-    		case 1: accuracy = 1333;
-    				 break;
-    		case 2: accuracy = 1667;
-    				 break;
-    		case 3: accuracy = 2000;
-    				 break;
-    		case 4: accuracy = 2333;
-    				 break;
-    		case 5: accuracy = 2667;
-    				 break;
-    		case 6: accuracy = 3000;
-    				 break;
-    	}
-    }
-       
+          
 }
