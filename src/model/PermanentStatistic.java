@@ -14,31 +14,31 @@ public class PermanentStatistic extends Statistic{
 	@Override
 	void adaptStat(){
 		switch(statLevel){
-			case -6: curValue = 25;
+			case -6: curValue = 25 * value / 100;
     				 break;
-    		case -5: curValue = 29;
+    		case -5: curValue = 29 * value / 100;
     				 break;
-    		case -4: curValue = 33;
+    		case -4: curValue = 33 * value / 100;
     				 break;
-    		case -3: curValue = 40;
+    		case -3: curValue = 40 * value / 100;
     				 break;
-    		case -2: curValue = 50;
+    		case -2: curValue = 50 * value / 100;
     				 break;
-    		case -1: curValue = 67;
+    		case -1: curValue = 67 * value / 100;
     				 break;
-    		case 0: curValue = 100;
+    		case 0: curValue = 100 * value / 100;
     				 break;
-    		case 1: curValue = 150;
+    		case 1: curValue = 150 * value / 100;
     				 break;
-    		case 2: curValue = 200;
+    		case 2: curValue = 200 * value / 100;
     				 break;
-    		case 3: curValue = 250;
+    		case 3: curValue = 250 * value / 100;
     				 break;
-    		case 4: curValue = 300;
+    		case 4: curValue = 300 * value / 100;
     				 break;
-    		case 5: curValue = 350;
+    		case 5: curValue = 350 * value / 100;
     				 break;
-    		case 6: curValue = 400;
+    		case 6: curValue = 400 * value / 100;
     				 break;
     	}
     }
