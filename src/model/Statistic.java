@@ -1,22 +1,18 @@
 package javamon.model;
 
+import java.util.HashMap;
+
 public abstract class Statistic{
 	
-	int value;
-	int curValue;
-	int statLevel;
+	protected HashMap<int, int> values;
+	protected int statLevel;
 	
 	
-	public void tempIncrement(int value){
-		statLevel += value;
-		adaptStat();
-	}
-	
-	public void resetTempCondition(){ 
-		curValue = value;
+	public void resetStatLevel(){ 
 		statLevel = 0;
 	}
 	
-	abstract void adaptStat();
+//	abstract void adaptStat();
 	
+	abstract int getValue();
 }

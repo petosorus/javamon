@@ -3,12 +3,13 @@ package javamon.model;
 public class InCombatStatistic extends Statistic{
 
 	public InCombatStatistic(){
-		this.value = 1000;	//Value is by default of 100. 
-							//To avoid floats, it will be 1000.
-		curValue = this.value;
 		statLevel = 0;	
-	}
 
+		values = {{-6, 333},
+				  {-5, 375}};
+					
+	}
+/*
 	@Override
 	void adaptStat(){
 		switch(statLevel){
@@ -40,4 +41,8 @@ public class InCombatStatistic extends Statistic{
     				 break;
     	}
     }
+*/    
+    int getValue(){
+    	return values.get(statLevel);
+    }   	
 }

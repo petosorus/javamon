@@ -2,15 +2,17 @@ package javamon.model;
 
 public class PermanentStatistic extends Statistic{
 	
+	int baseValue;
+	
 	public PermanentStatistic(int value){ 
-		this.value = value;	
-		curValue = this.value;
+		baseValue = value;	
 		statLevel = 0;	
+		
+		values = 
 	}
 
-	//Formula to be included
-	public void increment(int value){ this.value += value; }
-	
+
+/*	
 	@Override
 	void adaptStat(){
 		switch(statLevel){
@@ -42,4 +44,9 @@ public class PermanentStatistic extends Statistic{
     				 break;
     	}
     }
+*/    
+    @Override
+ 	int getValue(){
+ 		return baseValue * values.getValue(statLevel) / 100;
+ 	}
 }
