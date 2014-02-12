@@ -5,7 +5,7 @@ import java.lang.Math;
 public abstract class Ability{
 
 	String name;
-	int accuracy;
+	int accuracy;				//Here accuracy is scaled on 100.
 	Type type;
 	Pokemon source;
 	Pokemon target;
@@ -21,7 +21,7 @@ public abstract class Ability{
 	
 		
 	protected double currentAccuracy(int attackerAccuracy){
-		return this.accuracy / 100 * attackerAccuracy / 1000;
+		return (this.accuracy / 100) * (attackerAccuracy / 1000);
 	}
 		
 	protected boolean strike(int attackerAccuracy){
