@@ -8,7 +8,7 @@ public class PermanentStatistic extends Statistic{
 		baseValue = value;	
 		statLevel = 0;	
 		
-		values = 
+//		values = 
 	}
 
 

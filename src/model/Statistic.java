@@ -8,7 +8,11 @@ public abstract class Statistic{
 	protected int statLevel;
 	
 	
-	public void resetStatLevel(){ 
+	public void tempIncrement(int value){
+		statLevel += value;
+	}
+	
+	public void resetTempCondition(){ 
 		statLevel = 0;
 	}
 	

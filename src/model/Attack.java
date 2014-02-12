@@ -15,10 +15,10 @@ public class Attack extends Ability{
 		int level = attacker.level;
 		
 		int attack = category == AttackCategory.Physical ? 
-			attacker.attack.curValue : attacker.attackSpe.curValue;
+			attacker.attack.getValue() : attacker.attackSpe.getValue();
 			
 		int defense = category == AttackCategory.Physical ? 
-			attacker.defense.curValue : attacker.defenseSpe.curValue;
+			attacker.defense.getValue() : attacker.defenseSpe.getValue();
 		
 		double power = force * type.coefficientSTAB(attacker.type1) *
 			type.coefficientSTAB(attacker.type2);

@@ -5,8 +5,8 @@ public class InCombatStatistic extends Statistic{
 	public InCombatStatistic(){
 		statLevel = 0;	
 
-		values = {{-6, 333},
-				  {-5, 375}};
+//		values = {{-6, 333},
+//				  {-5, 375}};
 					
 	}
 /*
