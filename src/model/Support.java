@@ -6,7 +6,7 @@ public class Support extends Ability{
 	
 	Statistic statistic;
 	int force;
-
+/*
 	public Support(String name, int accuracy, Type type, 
 					Pokemon source, Pokemon target,
 					Statistic statistic, int force){
@@ -14,7 +14,7 @@ public class Support extends Ability{
 		this.statistic = statistic;
 		this.force = force;
 	}
-	
+*/	
 	@Override
 	public void effect(){
 		target.improveStat(statistic, force);
