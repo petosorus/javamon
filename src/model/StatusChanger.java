@@ -10,7 +10,8 @@ public class StatusChanger extends Ability{
 		this.status = status;
 	}
 
-	void effect(Pokemon defender){
-		defender.status = this.status;
+	@Override
+	public void effect(){
+		target.status = this.status;
 	}
 }

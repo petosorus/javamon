@@ -30,8 +30,9 @@ public class Attack extends Ability{
 			coefficient);
 	}
 	
-	void effect(Pokemon attacker, Pokemon defender){
-		defender.decreaseHP(damageCalculation(attacker, defender));
+	@Override
+	public void effect(){
+		target.decreaseHP(damageCalculation(source, target));
 	}
 	
 }

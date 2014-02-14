@@ -30,5 +30,7 @@ public abstract class Ability{
 		}
 		return false;
 	}
+	
+	public abstract void effect();
 
 }

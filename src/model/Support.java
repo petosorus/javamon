@@ -15,8 +15,9 @@ public class Support extends Ability{
 		this.force = force;
 	}
 	
-	void effect(Pokemon defender){
-		defender.improveStat(statistic, force);
+	@Override
+	public void effect(){
+		target.improveStat(statistic, force);
 	}
 		
 }
