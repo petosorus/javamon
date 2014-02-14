@@ -4,22 +4,13 @@ public class Attack extends Ability{
 	
 	int force;
 	AttackCategory category;
-
-	public Attack(int accuracy, Pokemon source, Pokemon target, int force,
-		AttackCategory category){
-		this.accuracy = accuracy;
-		this.source = source;
-		this.target = target;
-		this.force = force;
-		this.category = category;
-	}
-/*		
+		
 	public Attack(String name, int accuracy, Type type, 
 					Pokemon source, Pokemon target, int force){
 		super(name, accuracy, type, source, target);
 		this.force = force;
 	}
-*/
+
 	protected int damageCalculation(Pokemon attacker, Pokemon defender){
 		int level = attacker.level;
 		System.err.println(level);

@@ -9,7 +9,7 @@ public abstract class Ability{
 	Type type;
 	Pokemon source;
 	Pokemon target;
-/*	
+	
 	public Ability(String name, int accuracy, Type type, 
 					Pokemon source, Pokemon target){
 		this.name = name;
@@ -18,7 +18,7 @@ public abstract class Ability{
 		this.source = source;
 		this.target = target;
 	}
-*/	
+	
 		
 	protected double currentAccuracy(int attackerAccuracy){
 		return this.accuracy * attackerAccuracy / 100000;
