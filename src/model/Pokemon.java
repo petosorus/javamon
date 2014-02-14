@@ -30,6 +30,8 @@ public class Pokemon{
     Ability slot3;
     Ability slot4;
     
+    public Pokemon(){}
+    
     public Pokemon(int id, String race, String name, Gender gender,
     			Type type1, Type type2, int hpMax, int hpCurrent, int level,
     			Ability slot1, Ability slot2, Ability slot3, Ability slot4,
