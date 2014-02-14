@@ -38,9 +38,9 @@
   </java>
 </target>
 
-<!--<target name="compileTest" depends="compile">-->
-<!--  <javac srcdir="test" destdir="test" />-->
-<!--</target>-->
+<target name="compileTest" depends="compile">
+  <javac srcdir="tests/" destdir="tests" />
+</target>
 
 <!--<target name="testPokemon" depends="compileTest">-->
 <!--  <java classname="testPokemon">-->
