@@ -21,7 +21,7 @@ public abstract class Ability{
 	
 		
 	protected double currentAccuracy(int attackerAccuracy){
-		return (this.accuracy / 100) * (attackerAccuracy / 1000);
+		return this.accuracy * attackerAccuracy / 100000;
 	}
 		
 	protected boolean strike(int attackerAccuracy){

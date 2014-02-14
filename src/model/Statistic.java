@@ -5,7 +5,7 @@ import java.util.HashMap;
 public abstract class Statistic{
 	
 	protected HashMap<Integer, Integer> values = new HashMap<Integer, Integer>();
-	protected int statLevel;
+	protected int statLevel = 0;
 	
 	
 	public void tempIncrement(int value){
@@ -16,7 +16,6 @@ public abstract class Statistic{
 		statLevel = 0;
 	}
 	
-//	abstract void adaptStat();
 	
 	abstract int getValue();
 }

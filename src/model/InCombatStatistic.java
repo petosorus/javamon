@@ -3,7 +3,6 @@ package javamon.model;
 public class InCombatStatistic extends Statistic{
 
 	public InCombatStatistic(){
-		statLevel = 0;	
 
 		values.put(-6, 333);
 		values.put(-5, 375);

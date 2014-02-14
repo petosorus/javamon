@@ -6,7 +6,6 @@ public class PermanentStatistic extends Statistic{
 	
 	public PermanentStatistic(int value){ 
 		baseValue = value;	
-		statLevel = 0;	
 		
 		values.put(-6, 25);
 		values.put(-5, 29);
