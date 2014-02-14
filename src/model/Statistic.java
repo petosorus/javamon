@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public abstract class Statistic{
 	
-	protected HashMap<int, int> values;
+	protected HashMap<Integer, Integer> values = new HashMap<Integer, Integer>();
 	protected int statLevel;
 	
 	

@@ -8,45 +8,25 @@ public class PermanentStatistic extends Statistic{
 		baseValue = value;	
 		statLevel = 0;	
 		
-//		values = 
+		values.put(-6, 25);
+		values.put(-5, 29);
+		values.put(-4, 33);
+		values.put(-3, 40);
+		values.put(-2, 50);
+		values.put(-1, 67);
+		values.put(0, 100);
+		values.put(1, 150);
+		values.put(2, 200);
+		values.put(3, 250);
+		values.put(4, 300);
+		values.put(5, 350);
+		values.put(6, 400);
+		
 	}
 
 
-/*	
-	@Override
-	void adaptStat(){
-		switch(statLevel){
-			case -6: curValue = 25 * value / 100;
-    				 break;
-    		case -5: curValue = 29 * value / 100;
-    				 break;
-    		case -4: curValue = 33 * value / 100;
-    				 break;
-    		case -3: curValue = 40 * value / 100;
-    				 break;
-    		case -2: curValue = 50 * value / 100;
-    				 break;
-    		case -1: curValue = 67 * value / 100;
-    				 break;
-    		case 0: curValue = 100 * value / 100;
-    				 break;
-    		case 1: curValue = 150 * value / 100;
-    				 break;
-    		case 2: curValue = 200 * value / 100;
-    				 break;
-    		case 3: curValue = 250 * value / 100;
-    				 break;
-    		case 4: curValue = 300 * value / 100;
-    				 break;
-    		case 5: curValue = 350 * value / 100;
-    				 break;
-    		case 6: curValue = 400 * value / 100;
-    				 break;
-    	}
-    }
-*/    
     @Override
  	int getValue(){
- 		return baseValue * values.getValue(statLevel) / 100;
+ 		return baseValue * (values.get(statLevel) / 100);
  	}
 }
