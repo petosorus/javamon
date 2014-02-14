@@ -39,7 +39,7 @@
 </target>
 
 <target name="compileTest" depends="compile">
-  <javac srcdir="tests/" destdir="tests" />
+  <javac srcdir="tests/" destdir="tests" classpath="class"/>
 </target>
 
 <!--<target name="testPokemon" depends="compileTest">-->

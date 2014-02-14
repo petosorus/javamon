@@ -1,4 +1,4 @@
-package javamon.model;
+package javamon.tests;
 
 public class DemoMatch{
 	

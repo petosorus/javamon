@@ -1,11 +1,13 @@
-package javamon.model;
+package javamon.tests;
 
-public class Attack extends Ability{
+import javamon.model.Attack;
+
+public class TestAttack extends Attack{
 	
 	int force;
 	AttackCategory category;
 
-	public Attack(int accuracy, Pokemon source, Pokemon target, int force,
+	public TestAttack(int accuracy, Pokemon source, Pokemon target, int force,
 		AttackCategory category){
 		this.accuracy = accuracy;
 		this.source = source;
