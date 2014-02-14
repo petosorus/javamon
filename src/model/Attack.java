@@ -5,27 +5,29 @@ public class Attack extends Ability{
 	int force;
 	AttackCategory category;
 
-	public Attack(int accuracy, Pokemon source, Pokemon target, int force){
+	public Attack(int accuracy, Pokemon source, Pokemon target, int force,
+		AttackCategory category){
 		this.accuracy = accuracy;
 		this.source = source;
 		this.target = target;
 		this.force = force;
+		this.category = category;
 	}
-		
-/*	public Attack(String name, int accuracy, Type type, 
+/*		
+	public Attack(String name, int accuracy, Type type, 
 					Pokemon source, Pokemon target, int force){
 		super(name, accuracy, type, source, target);
 		this.force = force;
 	}
-*/	
+*/
 	protected int damageCalculation(Pokemon attacker, Pokemon defender){
 		int level = attacker.level;
 		System.err.println(level);
-		int attack = //(category == AttackCategory.Physical ? 
-			attacker.attack.getValue() ;//: attacker.attackSpe.getValue());
+		int attack = (category == AttackCategory.Physical) ? 
+			attacker.attack.getValue() : attacker.attackSpe.getValue();
 		System.err.println(attack);
-		int defense = //(category == AttackCategory.Physical ? 
-			defender.defense.getValue() ;//: attacker.defenseSpe.getValue());
+		int defense = (category == AttackCategory.Physical) ? 
+			defender.defense.getValue() : attacker.defenseSpe.getValue();
 		System.err.println(defense);
 		double power = force ;//* type.coefficientSTAB(attacker.type1) *
 //			type.coefficientSTAB(attacker.type2);

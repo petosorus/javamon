@@ -1,7 +1,7 @@
 package javamon.model;
 
 /**
-* Enum representing category of an attack
+* Enum representing the category of an attack
 */
 public enum AttackCategory{
 	Physical,
