@@ -10,7 +10,7 @@ public class Match{
 		this.game = game;
 	}
 	
-	void solveAttack(Attack attack){
+	void solveAttack(Ability attack){
 		attack.effect();		
 	}
 }

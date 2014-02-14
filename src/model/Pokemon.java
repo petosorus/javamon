@@ -30,7 +30,18 @@ public class Pokemon{
     Ability slot3;
     Ability slot4;
     
-    public Pokemon(){}
+    public Pokemon(String name, int hpMax, PermanentStatistic defense){
+    	this.nickname = name;
+    	this.hpCurrent = this.hpMax = hpMax;
+    	this.defense = defense;
+    }
+    
+    public Pokemon(int level, PermanentStatistic attack){
+    	this.level = level;
+    	this.attack = attack;
+    	this.slot1 = slot1;
+    }
+    public void writeSlot1(Attack slot1){this.slot1 = slot1;}
     
     public Pokemon(int id, String race, String name, Gender gender,
     			Type type1, Type type2, int hpMax, int hpCurrent, int level,
