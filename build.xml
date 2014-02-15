@@ -39,12 +39,12 @@
 </target>
 
 <target name="compileTest" depends="compile">
-  <javac srcdir="tests/" destdir="tests" classpath="class"/>
+  <javac srcdir="tests/" destdir="class/" />
 </target>
 
-<!--<target name="testPokemon" depends="compileTest">-->
-<!--  <java classname="testPokemon">-->
-<!--  </java>-->
-<!--</target>-->
+<target name="testPokemon" depends="compileTest">
+  <java classname="javamon.model.DemoMatch" classpath="class/">
+  </java>
+</target>
 
 </project>
