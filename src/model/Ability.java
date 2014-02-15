@@ -9,6 +9,8 @@ public abstract class Ability{
 	Type type;
 	Pokemon source;
 	Pokemon target;
+
+	public Ability(){}
 	
 	public Ability(String name, int accuracy, Type type, 
 					Pokemon source, Pokemon target){

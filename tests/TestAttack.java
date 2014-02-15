@@ -1,12 +1,7 @@
-package javamon.tests;
-
-import javamon.model.Attack;
+package javamon.model;
 
 public class TestAttack extends Attack{
 	
-	int force;
-	AttackCategory category;
-
 	public TestAttack(int accuracy, Pokemon source, Pokemon target, int force,
 		AttackCategory category){
 		this.accuracy = accuracy;
@@ -15,13 +10,8 @@ public class TestAttack extends Attack{
 		this.force = force;
 		this.category = category;
 	}
-/*		
-	public Attack(String name, int accuracy, Type type, 
-					Pokemon source, Pokemon target, int force){
-		super(name, accuracy, type, source, target);
-		this.force = force;
-	}
-*/
+	
+	@Override
 	protected int damageCalculation(Pokemon attacker, Pokemon defender){
 		int level = attacker.level;
 		System.err.println(level);
@@ -41,11 +31,6 @@ public class TestAttack extends Attack{
 		
 		return (int)((((level * 0.4 + 2) * attack * power)/(defense * 50) +2) *
 			coefficient);
-	}
-	
-	@Override
-	public void effect(){
-		target.decreaseHP(damageCalculation(source, target));
 	}
 	
 }

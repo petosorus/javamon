@@ -4,7 +4,9 @@ public class Attack extends Ability{
 	
 	int force;
 	AttackCategory category;
-		
+	
+	public Attack(){}	
+	
 	public Attack(String name, int accuracy, Type type, 
 					Pokemon source, Pokemon target, int force){
 		super(name, accuracy, type, source, target);
