@@ -10,7 +10,7 @@ Additions de gameplay :
     choix du type de sauvegarde (auto only ou manuelle)
     
 
-Tâche actuelle : système de combat <br/>
+Tâche actuelle : système de combat - test des dommagse selon types <br/>
 
 
 Credits <br/>
