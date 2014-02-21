@@ -1,7 +1,7 @@
 package javamon.model;
 
 public class Fairy extends Type{
-	private static final Fairy instance = new Fairy();
+	private static Fairy instance;
 	
 	private Fairy() {
 		weak.add(Poison.getInstance());
@@ -14,6 +14,9 @@ public class Fairy extends Type{
 	}
 	
 	public static Fairy getInstance() {
+		if (instance == null){
+			instance = new Fairy();
+		}
 		return instance;
 	}
 }

@@ -1,7 +1,7 @@
 package javamon.model;
 
 public class Electr extends Type{
-	private static final Electr instance = new Electr();
+	private static Electr instance;
 	
 	private Electr() {
 		noEffect.add(Ground.getInstance());
@@ -15,6 +15,9 @@ public class Electr extends Type{
 	}
 	
 	public static Electr getInstance() {
+		if (instance == null){
+			instance = new Electr();
+		}
 		return instance;
 	}
 }

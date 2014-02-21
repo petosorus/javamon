@@ -1,7 +1,7 @@
 package javamon.model;
 
 public class Bug extends Type{
-	private static final Bug instance = new Bug();
+	private static Bug instance;
 	
 	private Bug() {
 		weak.add(Fight.getInstance());
@@ -18,6 +18,9 @@ public class Bug extends Type{
 	}
 	
 	public static Bug getInstance() {
+		if (instance == null){
+			instance = new Bug();
+		}
 		return instance;
 	}
 }
