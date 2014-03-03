@@ -1,7 +1,7 @@
 package javamon.model;
 
 public class Dark extends Type{
-	private static Dark instance;
+	private static final Dark instance = new Dark();
 	
 	private Dark() {
 		weak.add(Fight.getInstance());
@@ -13,9 +13,6 @@ public class Dark extends Type{
 	}
 	
 	public static Dark getInstance() {
-		if (instance == null){
-			instance = new Dark();
-		}
 		return instance;
 	}
 }

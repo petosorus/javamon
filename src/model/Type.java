@@ -3,9 +3,9 @@ package javamon.model;
 import java.util.HashSet;
 
 public abstract class Type{
-	HashSet<Type> noEffect = new HashSet();
-	HashSet<Type> weak = new HashSet();
-	HashSet<Type> strong = new HashSet();
+	HashSet<Type> noEffect;
+	HashSet<Type> weak;
+	HashSet<Type> strong;
 	
 	protected double coefficient(Type defender){
 		if(noEffect.contains(defender)){ return 0; }

@@ -1,19 +1,15 @@
 package javamon.model;
 
 public class Normal extends Type{
-	private static Normal instance;
+	private static final Normal instance = new Normal();
 	
-	private Normal() {		
+	private Normal() {
 		noEffect.add(Ghost.getInstance());
-		
 		weak.add(Rock.getInstance());
 		weak.add(Steel.getInstance());
 	}
 	
-	public static Normal getInstance() {		
-		if (instance == null){
-			instance = new Normal();
-		}
+	public static Normal getInstance() {
 		return instance;
 	}
 }

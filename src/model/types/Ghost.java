@@ -1,16 +1,13 @@
 package javamon.model;
 
 public class Ghost extends Type{
-	private static Ghost instance;
+	private static final Ghost instance = new Ghost();
 	
 	private Ghost() {
 
 	}
 	
 	public static Ghost getInstance() {
-		if (instance == null){
-			instance = new Ghost();
-		}
 		return instance;
 	}
 }

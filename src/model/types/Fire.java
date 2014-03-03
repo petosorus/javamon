@@ -1,16 +1,13 @@
 package javamon.model;
 
 public class Fire extends Type{
-	private static Fire instance;
+	private static final Fire instance = new Fire();
 	
 	private Fire() {
 
 	}
 	
 	public static Fire getInstance() {
-		if (instance == null){
-			instance = new Fire();
-		}
 		return instance;
 	}
 }

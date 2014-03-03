@@ -1,16 +1,13 @@
 package javamon.model;
 
 public class Grass extends Type{
-	private static Grass instance;
+	private static final Grass instance = new Grass();
 	
 	private Grass() {
 
 	}
 	
 	public static Grass getInstance() {
-		if (instance == null){
-			instance = new Grass();
-		}
 		return instance;
 	}
 }

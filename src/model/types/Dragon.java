@@ -1,7 +1,7 @@
 package javamon.model;
 
 public class Dragon extends Type{
-	private static Dragon instance;
+	private static final Dragon instance = new Dragon();
 	
 	private Dragon() {
 		noEffect.add(Fairy.getInstance());
@@ -12,9 +12,6 @@ public class Dragon extends Type{
 	}
 	
 	public static Dragon getInstance() {
-		if (instance == null){
-			instance = new Dragon();
-		}
 		return instance;
 	}
 }
