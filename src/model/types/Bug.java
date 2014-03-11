@@ -1,9 +1,11 @@
 package javamon.model;
 
 public class Bug extends Type{
-	private static final Bug instance = new Bug();
+	private static Bug instance;
 	
-	private Bug() {
+	private Bug() {}
+	
+	private void init(){
 		weak.add(Fight.getInstance());
 		weak.add(Flying.getInstance());
 		weak.add(Poison.getInstance());
@@ -16,8 +18,12 @@ public class Bug extends Type{
 		strong.add(Psychc.getInstance());
 		strong.add(Dark.getInstance());
 	}
-	
+
 	public static Bug getInstance() {
+		if(instance == null){
+			instance = new Bug();
+			instance.init();
+		}		
 		return instance;
 	}
 }

@@ -12,6 +12,10 @@ public class TestPokemon extends Pokemon{
     	this.level = level;
     	this.attack = attack;
     }
+
+	public TestPokemon(Type type){
+		type1 = type;
+	}
     
     public void writeSlot1(TestAttack slot1){this.slot1 = slot1;}
     
